@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /**
  * Created by alexandraqin on 4/14/15.
  */
@@ -27,6 +29,14 @@ public class Methods {
 
 
     }
+    public static int Random(int one, int two){
+        Random rand = new Random();
+        int r= rand.nextInt(two);
+        if(r<one){
+            r=one;
+        }
+        return r;
+    }
 
   public static void main (String args[]) {
       System.out.println(calculateSquare(10));
@@ -34,5 +44,6 @@ public class Methods {
       System.out.println(toLower("Sup, Cow?"));
       System.out.println(isMultiple(5,7));
       prettyInt(8);
+      System.out.println(Random(3, 5));
   }
 }

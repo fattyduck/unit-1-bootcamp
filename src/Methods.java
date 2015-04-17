@@ -5,8 +5,7 @@ import java.util.Random;
  */
 public class Methods {
     public static int calculateSquare(int i){
-        int square=i*i;
-        return square;
+        return i*i;
     }
     public static double calculateSquareRoot(int i){
         double root=Math.sqrt(i);
